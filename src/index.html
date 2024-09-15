@@ -14,16 +14,10 @@
   <body>
     <main>
       <!-- Loads the specified .html file -->
-      <input type="text" id="search-img" />
-      <button
-        type="button"
-        class="buttonSearch"
-        placeholder="Search images..."
-        data-search
-      >
-        Search
-      </button>
-
+      <form class="formImg">
+        <input type="text" id="search-img" placeholder="Search images..." />
+        <button type="submit" class="buttonSearch" data-search>Search</button>
+      </form>
       <ul class="list-img"></ul>
     </main>
     <script type="module" src="./main.js"></script>
