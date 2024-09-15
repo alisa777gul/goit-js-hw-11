@@ -136,15 +136,23 @@ input:not(:placeholder-shown):focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 8px;
+    gap: 20px;
     align-items: center;
 }
 
 .descr p {
     display: flex;
+        font-size: 12px;
+    line-height: 2;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.descr p b{
+      line-height: 1.33333;
 }
 
 .visually-hidden {

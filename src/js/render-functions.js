@@ -11,10 +11,10 @@ export function renderUsers(photos, photoList) {
                     <img src="${photo.webformatURL}" alt="${photo.tags}" width="360" height="152">
                 </a>
                 <div class="descr">
-                    <p><b>Likes:</b> ${photo.likes}</p>
-                    <p><b>Views:</b> ${photo.views}</p>
-                    <p><b>Comments:</b> ${photo.comments}</p>
-                    <p><b>Downloads:</b> ${photo.downloads}</p>
+                    <p><b>Likes</b> ${photo.likes}</p>
+                    <p><b>Views</b> ${photo.views}</p>
+                    <p><b>Comments</b> ${photo.comments}</p>
+                    <p><b>Downloads</b> ${photo.downloads}</p>
                 </div>
             </li>`;
         })
