@@ -19,7 +19,10 @@ formNew.addEventListener("submit", (event) => {
     if (query !== "") { 
         
         fetchPhotos(query)
-            .then((photos) => { loading.classList.add("visually-hidden"); renderUsers(photos, photoList) }) 
+            .then((photos) => {
+                loading.classList.add("visually-hidden");
+                renderUsers(photos, photoList)
+            }) 
             .catch((error) => console.log(error));
     } else {
          loading.classList.add("visually-hidden");

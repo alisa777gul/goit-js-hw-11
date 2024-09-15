@@ -20,13 +20,13 @@ export function fetchPhotos(query) {
       return response.json();
     })
     .then((data) => {
-      if (data.hits.length <= 0) { // Исправлено: используем .length вместо .length()
+      if (data.hits.length <= 0) { 
         iziToast.error({
           title: 'Error',
           message: 'Sorry, there are no images matching your search query. Please try again!',
           position: 'topRight',
         });
-        return []; // Возвращаем пустой массив, если нет результатов
+        return []; 
       }
       return data.hits;
     })
@@ -36,7 +36,7 @@ export function fetchPhotos(query) {
         message: 'An error occurred while fetching the images. Please try again later.',
         position: 'topRight',
       });
-      console.error(error); // Логируем ошибку для отладки
+      console.error(error); 
     });
 }
  
