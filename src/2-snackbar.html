@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <label class="snack-label">
+          Delay (ms)
+          <input type="number" name="delay" id="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <div class="labels">
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="button-submit" type="submit">Create notification</button>
+      </form>
+      <a class="button-link" href="./index.html">Back</a>
+    </main>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>

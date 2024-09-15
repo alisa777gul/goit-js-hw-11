@@ -1,0 +1,105 @@
+.snack-label{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+}
+
+#delay{
+    box-sizing: border-box;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
+    padding-left: 16px;
+    border: 1px solid #808080;
+        border-radius: 4px;
+        max-width: 360px;
+        width: 360px;
+       
+            
+        height: 40px;
+        transition: border-color 15ms;
+}
+
+#delay:hover,
+#delay:focus{
+    border-color: black;
+}
+
+form{
+   
+}
+
+fieldset{
+    border-radius: 4px;
+      
+         max-width: 360px;
+         min-height: 64px;
+        
+       padding: 0;
+
+  position: relative;
+    transition: border-color 15ms;
+   
+}
+
+fieldset:hover,
+fieldset:focus{
+    border-color: black;
+}
+
+fieldset:active{
+    border-color: black;
+}
+
+.labels{
+display: flex;
+gap: 48px;
+position: absolute;
+left: 48px;
+top: 8px;
+}
+
+legend{
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+margin-left: 28px;
+}
+
+.button-submit{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        border: none;
+      border-radius: 8px;
+        padding: 8px 16px;
+        min-width: 360px;
+        height: 40px;
+       background: #4e75ff;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        margin-top: 24px;
+        transition: background-color 15ms;
+}
+
+.button-submit:hover,
+.button-submit:focus{
+    background-color: #6c8cff;
+}
+
+
