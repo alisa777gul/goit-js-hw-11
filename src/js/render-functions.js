@@ -1,8 +1,8 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-
+  const lightbox = new SimpleLightbox('.list-img a');
 export function renderUsers(photos, photoList) {
-    photoList.innerHTML = "";
+   
 
     const markup = photos
         .map((photo) => {
@@ -22,6 +22,6 @@ export function renderUsers(photos, photoList) {
 
     photoList.insertAdjacentHTML("beforeend", markup);
 
-    const lightbox = new SimpleLightbox('.list-img a');
+  
     lightbox.refresh();
 }

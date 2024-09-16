@@ -14,6 +14,7 @@ import { fetchPhotos } from './js/pixabay-api.js';
 
 formNew.addEventListener("submit", (event) => {
     event.preventDefault(); 
+    photoList.innerHTML = "";
     loading.classList.remove("visually-hidden");
     const query = inputSearch.value.trim();
     if (query !== "") { 
